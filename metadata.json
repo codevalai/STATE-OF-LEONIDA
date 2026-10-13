@@ -1,0 +1,6 @@
+{
+  "name": "Vice Sovereign – GTA 6 AI Strategist & Master Orchestrator",
+  "description": "Next-gen GTA 6 companion, mission strategist, live telemetry oracle, dynamic heist planner, and Leonida server orchestration suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

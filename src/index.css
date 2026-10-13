@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #05070d;
+    color: #e2e8f0;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Vice City Cyber & Neon Glow Utilities */
+.neon-glow-pink {
+  box-shadow: 0 0 20px -3px rgba(255, 42, 133, 0.45), 0 0 8px rgba(255, 42, 133, 0.3);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 20px -3px rgba(0, 240, 255, 0.45), 0 0 8px rgba(0, 240, 255, 0.3);
+}
+
+.neon-glow-amber {
+  box-shadow: 0 0 20px -3px rgba(245, 158, 11, 0.45), 0 0 8px rgba(245, 158, 11, 0.3);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 12px rgba(255, 42, 133, 0.7);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.7);
+}
+
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
